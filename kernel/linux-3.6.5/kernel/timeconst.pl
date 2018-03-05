@@ -370,7 +370,9 @@ if ($hz eq '--can') {
 	}
 
 	@val = @{$canned_values{$hz}};
-	if (!defined(@val)) {
+	# changed by lihz, conpile error by ubuntu16.04-64bit
+	#if (!defined(@val)) {
+	if (!(@val)) {
 		@val = compute_values($hz);
 	}
 	output($hz, @val);

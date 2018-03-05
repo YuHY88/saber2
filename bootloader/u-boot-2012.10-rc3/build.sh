@@ -49,7 +49,7 @@ echo "====make ht201 error!!!===="
 exit                                                                               
 fi 
 
-cp output/images/u-boot.bin /tftpboot/ht201_main_uboot
+cp output/images/u-boot.bin /home/work/tftpboot/ht201_main_uboot
 if [ $? -ne 0 ]                                                                       
 then                                                                                  
 echo "====make ht201 error!!!===="
@@ -74,7 +74,7 @@ echo "====make ht201e error!!!===="
 exit                                                                               
 fi 
 
-cp output/images/u-boot.bin /tftpboot/ht201e_main_uboot
+cp output/images/u-boot.bin /home/work/tftpboot/ht201e_main_uboot
 if [ $? -ne 0 ]                                                                       
 then                                                                                  
 echo "====make ht201 error!!!===="

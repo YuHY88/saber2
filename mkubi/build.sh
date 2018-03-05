@@ -20,6 +20,6 @@ mkfs.ubifs -r ./bin -m 2048 -e 126976  -c  6979 -o ht201_main_kernel
 cp ../ramdisk/rootfs-ht201e ./bin/rootfs
 mkfs.ubifs -r ./bin -m 2048 -e 126976  -c  6979 -o ht201e_main_kernel 
 
-cp ht201e_main_kernel  /tftpboot/
-cp ht201_main_kernel  /tftpboot/
+cp ht201e_main_kernel  /home/work/tftpboot/
+cp ht201_main_kernel  /home/work/tftpboot/
 

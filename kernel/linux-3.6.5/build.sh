@@ -7,12 +7,12 @@ export CROSS_COMPILE=arm-linux-
 
 make Image
 if [ $? -eq 0 ];then
-cp ./arch/arm/boot/Image ../../mkubi/Image
-echo cp ./arch/arm/boot/Image ../../mkubi/Image
-cd ../../mkubi
-./build.sh
+	cp ./arch/arm/boot/Image ../../mkubi/Image
+	echo cp ./arch/arm/boot/Image ../../mkubi/Image
+	cd ../../mkubi
+	./build.sh
 else
-echo "==========make Image error=========="
+	echo "==========make Image error=========="
 
 fi
 #cp ./arch/powerpc/boot/p1020rdb-pc.dtb ../mkubi/bin/1604-dtb

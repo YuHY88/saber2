@@ -34,7 +34,8 @@
 #VERSION =  v001r011 #1. add update auto
 #VERSION =  v001r012 #1. adapt to K9K8G08U0E
 #VERSION =  v001r013 #1. rename uboot and kernel name
-VERSION =  v001r014 #1. do not save ethaddr mac, save cause erase,when fpga reset cpu,env erased  
+#VERSION =  v001r014 #1. do not save ethaddr mac, save cause erase,when fpga reset cpu,env erased  
+VERSION =  v001r015 #1. changing reset ddr delay time when soft reset device  
 
 PATCHLEVEL =   
 SUBLEVEL =

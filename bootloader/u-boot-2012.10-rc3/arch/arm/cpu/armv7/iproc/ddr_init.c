@@ -1765,6 +1765,9 @@ void ddr_init2(void)
 	}
 #endif /* defined(CONFIG_IPROC_P7) */
 
+	/* changed reset ddr delay time, add by lihz - 2018-3-30 */
+	__udelay(300*1000);
+
 #if defined(CONFIG_IPROC_P7)
 	/* Get the DDR S1 and S2 out of reset */
 	reg32_write((volatile uint32_t *)DDR_S1_IDM_RESET_CONTROL, 0);

@@ -518,8 +518,8 @@ sf write 0x61000000 0x0 0x200000\0" \
 "dnalli=run format;run dnkall;reset\0"    \
 "bootker=ubi bootk;bootm 0x61007fc0 0x62000000\0"    \
 "ethaddr=00:1d:80:01:03:05\0" \   
-"ipaddr=192.168.1.1\0" \   
-"serverip=192.168.1.254\0"
+"ipaddr=192.192.4.2\0" \   
+"serverip=192.192.4.254\0"
 
 
 #endif /* __SABER2_H */

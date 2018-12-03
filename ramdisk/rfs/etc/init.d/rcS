@@ -1,7 +1,6 @@
 #! /bin/sh
 hostname -F /etc/hostname
-ulimit -c 10240
-echo /data/dat/core.%e.%p.%s.%t > /proc/sys/kernel/pattern
+
 mount -n -t ramfs ramfs /var -o maxsize=104857600
 mount -n -t ramfs ramfs /tmp -o maxsize=10485760
 mount -n -t sysfs none /sys
@@ -55,6 +54,11 @@ mkdir /home/cfg
 mkdir /data/dat
 mkdir /data/ver
 sync
+
+# add by lihz
+ulimit -c 10240
+echo "/data/dat/core.%e.%p.%s.%t" > /proc/sys/kernel/core_pattern
+
 #addby zjj
 
 

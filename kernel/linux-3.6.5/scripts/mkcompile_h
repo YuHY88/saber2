@@ -15,7 +15,8 @@ CC=$5
 #myver=v001r008 #1.NM port up/down frequently 2.add vitess phy api to read register
 #myver=v001r009 #1.rename all the image names eg. replace saber2-ubi.fs to ht201_main_kernel
 #myver=v001r011 #1.add core dump
-myver=v001r012 #1.rm ipv6  2.modify hostname:Huahuan to localhost 3.update ramdisk Makefile
+#myver=v001r012 #1.rm ipv6  2.modify hostname:Huahuan to localhost 3.update ramdisk Makefile
+myver=v001r013 #1.update ramdisk etc/init.d/rcS, change core file
 
 vecho() { [ "${quiet}" = "silent_" ] || echo "$@" ; }
 
